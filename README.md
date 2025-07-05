@@ -2,6 +2,8 @@
 
 A full-stack application for managing corporate card transactions with expense categorization and reporting capabilities.
 
+> Note: this is a test for lotolatam
+
 ## 📚 Documentation
 
 - **[Documentation Index](./docs/README.md)** - All technical documentation
