@@ -63,7 +63,7 @@ This project follows **Hexagonal Architecture** (Ports and Adapters) pattern:
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone git@github.com:danestves/loto-test.git
 cd loto-test
 ```
 
