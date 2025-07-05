@@ -1,0 +1,39 @@
+{
+    "name": "server",
+    "type": "module",
+    "main": "src/index.ts",
+    "scripts": {
+        "build": "tsc && tsc-alias",
+        "check-types": "tsc --noEmit",
+        "compile": "bun build --compile --minify --sourcemap --bytecode ./src/index.ts --outfile server",
+        "db:generate": "drizzle-kit generate",
+        "db:local": "turso dev --db-file local.db",
+        "db:migrate": "drizzle-kit migrate",
+        "db:push": "drizzle-kit push",
+        "db:studio": "drizzle-kit studio",
+        "dev": "tsx watch src/index.ts",
+        "seed": "tsx src/db/seed.ts",
+        "start": "node dist/src/index.js",
+        "test": "vitest",
+        "test:ui": "vitest --ui"
+    },
+    "dependencies": {
+        "@hono/node-server": "1.15.0",
+        "@libsql/client": "0.15.9",
+        "@orpc/client": "1.6.4",
+        "@orpc/server": "1.6.4",
+        "dotenv": "17.0.1",
+        "drizzle-orm": "0.44.2",
+        "hono": "4.8.3",
+        "zod": "3.25.72"
+    },
+    "devDependencies": {
+        "@types/node": "24.0.10",
+        "@vitest/ui": "^3.2.4",
+        "drizzle-kit": "0.31.4",
+        "tsc-alias": "1.8.16",
+        "tsx": "4.20.3",
+        "typescript": "5.8.3",
+        "vitest": "^3.2.4"
+    }
+}
